@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,13 @@
 </head>
 <body>
     <div class = "container">
-        <div class="marriage_taital_main">
-        <h3 class="marriage_taital"> Add New Event</h3>
-        <form>
-            Event Name: <input type="text" name="Event Name">
+        <h3> Add New Event</h3>
+        <form onsubmit="return false;">
+            Event Name: <input type="text" name="Event Name" id="eventName">
             <br>
-            Due Date: <input type="text" name="Due Date">
+            Due Date: <input type="text" name="Due Date" id="eventDate">
+            <input type="submit" onclick="storeEvent()">
         </form>
-        </div>
     </div>
 </body>
 </html>
